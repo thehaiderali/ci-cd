@@ -5,7 +5,7 @@ const port=process.env.PORT || 4000
 app.use(express.json())
 
 app.get("/",(req,res)=>res.json({
-    message:"CI-CD Server API"
+    message:"CI-CD Server API Version 2"
 }))
 app.get("/ping",(req,res)=>{
     res.send("PONG")
