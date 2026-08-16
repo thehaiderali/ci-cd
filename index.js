@@ -7,7 +7,9 @@ app.use(express.json())
 app.get("/",(req,res)=>res.json({
     message:"CI-CD Server API"
 }))
-
+app.get("/choohi",(req,res)=>{
+    message:"Aiman Malik"
+})
 app.get("/health",(req,res)=>res.status(200).json({
     status:"OK",
     timestamp:Date.now(),
